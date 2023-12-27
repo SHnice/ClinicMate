@@ -32,7 +32,7 @@ export const appointmentSuccessEmailTemplate = (name, patientName, date, time) =
                       <tr>
                           <td style="text-align:center; padding: 0 40px;">
                             <a href="javascript:void(0)" title="logo" target="_blank">
-                              <img width="208.73px" height="80px" src="cid:logo" alt="">
+                             
                             </a>
                           </td>
                       </tr>
@@ -60,7 +60,7 @@ export const appointmentSuccessEmailTemplate = (name, patientName, date, time) =
                                       </p>
                                       <p style="color:#000; font-size:16px;line-height:18px; margin:10px 0 0 0; font-weight:medium; font-family:'Rubik',sans-serif; margin: 0 0 15px 0; letter-spacing: -0.01em; color: #121212;">
                                   
-                                      <img width="20"  src="cid:hand" alt=""><br/> Hey, ${name}
+                                      Hey, ${name}
                                           
                                       </p>
                                      
