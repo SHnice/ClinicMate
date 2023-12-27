@@ -48,7 +48,7 @@ function OurTeam() {
               </div>
               <div className="team-info">
                 <div className="team-info-comntent">
-                  <h4 className="title">Dr. Piyush Agrawal</h4>
+                  <h4 className="title">Dr. Heihachi Mishima</h4>
                   <span className="text-secondary">Dentist</span>
                 </div>
                 <ul className="social-media">
@@ -78,7 +78,7 @@ function OurTeam() {
               </div>
               <div className="team-info">
                 <div className="team-info-comntent">
-                  <h4 className="title">Dr. Rajendra Patel</h4>
+                  <h4 className="title">Dr. Jin Kazuma</h4>
                   <span className="text-secondary">Cardiologist</span>
                 </div>
                 <ul className="social-media">
@@ -142,7 +142,7 @@ function OurTeam() {
               </div>
               <div className="team-info">
                 <div className="team-info-comntent">
-                  <h4 className="title">Dr. Addition Smith</h4>
+                  <h4 className="title">Dr. John Wick</h4>
                   <span className="text-secondary">Physiotherapist</span>
                 </div>
                 <ul className="social-media">

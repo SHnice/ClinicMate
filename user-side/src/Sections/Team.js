@@ -147,7 +147,7 @@ function Team() {
                 </div>
                 <div className="team-info">
                   <div className="team-info-comntent">
-                    <h4 className="title">Abdul Rafey Farooqi</h4>
+                    <h4 className="title">Abdul Rafey</h4>
                     <span className="text-secondary">MERN Developer</span>
                   </div>
                   <ul className="social-media">

@@ -31,46 +31,24 @@ function NavBars() {
               <Link to={"/ourteam"} className="nav-link">
                 Doctors
               </Link>
-              <NavDropdown title="About us" id="basic-nav-dropdown">
-                <Link to={"/team"} className="dropdown-item">
-                  Creators
-                </Link>
-                <Link to={"/service"} className="dropdown-item">
-                  Services
-                </Link>
-              </NavDropdown>
-              <Link to={"/booking"} className="nav-link">
-                Booking
+
+              <Link to={"/service"} className="nav-link">
+                Services
               </Link>
-              {data?.isAuthenticated ? (
-                <Link
-                  to=""
-                  className="nav-link"
-                  onClick={() => {
-                    dispatch({ type: "AUTH_LOGOUT" });
-                    notify("Logged out");
-                  }}
-                >
-                  Logout
-                </Link>
-              ) : (
-                <NavDropdown title="Login" id="basic-nav-dropdown">
-                  <Link to={"/login"} className="dropdown-item">
-                    Patient
-                  </Link>
-                  <a href={`${process.env.REACT_APP_ADMIN_CLIENT}/`} className="dropdown-item">
-                    Staff
-                  </a>
-                </NavDropdown>
-              )}
-              <Link to="/Report" className="nav-link">
+
+              <Link to={"/team"} className="nav-link">
+                Our Team
+              </Link>
+             
+              
+              <a href="https://clinic-mates.vercel.app/" className="nav-link">
                 <button type="button">
-                  Report
+                  Portal
                   <span>
                     <IoIosArrowForward />
                   </span>
                 </button>
-              </Link>
+              </a>
             </Nav>
           </Navbar.Collapse>
         </Container>
