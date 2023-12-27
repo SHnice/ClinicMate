@@ -10,8 +10,19 @@
     width: 100%;
   }
   
+  .userName2 {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
   .userName {
     color: white;
     font-size: 1.2rem;
     font-family: 'Noto Sans', sans-serif;
+    text-decoration: none !important;
+  }
+  .userName:hover {
+    color: rgb(223, 223, 223);
+    text-decoration: none !important;
   }

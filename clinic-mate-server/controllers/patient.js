@@ -1,5 +1,8 @@
 import appointment from "../models/appointment.js";
+import auth from "../models/auth.js";
 import prescription from "../models/prescription.js";
+import { appointmentSuccessEmailTemplate } from "../utils/appointmentSuccessEmailTemplate.js";
+import { sendEmail } from "../utils/sendEmail.js";
 
 // -----------------------> Book Appointment <---------------------------
 
@@ -54,6 +57,18 @@ const makePayment = async (req, res) => {
       { payment: true }
     );
     if (updated) {
+
+      //sending email to doctor
+      const subject = "New Appointment Confirmed";
+      const doc = await auth.findOne({ uid: updated.docid });
+      const send_to = doc.email;
+      const sent_from = process.env.EMAIL_USER;
+      const message = appointmentSuccessEmailTemplate(updated.docname, updated.patname, updated.date, updated.time);
+      const result = await sendEmail(subject, message, send_to, sent_from);
+      if (!result) {
+        console.log('error while sending email')
+      }
+
       return res.status(200).json({
         error: false,
         msg: "Payment Successful. Appointment confirmed.",
