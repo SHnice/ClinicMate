@@ -8,8 +8,8 @@ import { dirname } from 'path';
 const currentFilePath = fileURLToPath(import.meta.url);
 const currentDirPath = dirname(currentFilePath);
 
-const handImagePath = path.join(currentDirPath, '../../public/images/hand.png');
-const logoImagePath = path.join(currentDirPath, '../../public/images/logo.png');
+const handImagePath = path.join(currentDirPath, '../public/images/hand.png');
+const logoImagePath = path.join(currentDirPath, '../public/images/logo.png');
 
 
 export const sendEmail = async (subject, message, send_to, sent_from) => {
@@ -36,7 +36,7 @@ export const sendEmail = async (subject, message, send_to, sent_from) => {
               },
               {
                 filename: 'logo.png',
-                path: handImagePath,
+                path: logoImagePath,
                 cid:"logo"
               }
           ]
