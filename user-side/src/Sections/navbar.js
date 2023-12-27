@@ -28,6 +28,9 @@ function NavBars() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
+            <Link to={"/about"} className="nav-link">
+                About Us
+              </Link>
               <Link to={"/ourteam"} className="nav-link">
                 Doctors
               </Link>

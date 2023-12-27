@@ -30,7 +30,7 @@ function Team() {
                   <ul className="social-media">
                     <li>
                       <a
-                        href="https://github.com/centauricoder01"
+                        href="https://github.com/YuvrajSagar5182"
                         target="_blank"
                       >
                         <BsGithub />
@@ -38,7 +38,7 @@ function Team() {
                     </li>
                     <li>
                       <a
-                        href="https://www.linkedin.com/in/rajendra01/"
+                        href="https://www.linkedin.com/in/yuvraj-sagar-514806227/"
                         target="_blank"
                       >
                         <BsLinkedin />
@@ -46,7 +46,7 @@ function Team() {
                     </li>
                     <li>
                       <a
-                        href="https://centauricoder01.github.io/"
+                        href="https://yuvi-portfolio.vercel.app/"
                         target="_blank"
                       >
                         <BsLink45Deg />
@@ -71,7 +71,7 @@ function Team() {
                   <ul className="social-media">
                     <li>
                       <a
-                        href="https://github.com/centauricoder01"
+                        href="https://github.com/SHnice"
                         target="_blank"
                       >
                         <BsGithub />
@@ -79,7 +79,7 @@ function Team() {
                     </li>
                     <li>
                       <a
-                        href="https://www.linkedin.com/in/rajendra01/"
+                        href="https://linkedin.com/in/saddam-hussain-3719b2248/"
                         target="_blank"
                       >
                         <BsLinkedin />
@@ -87,7 +87,7 @@ function Team() {
                     </li>
                     <li>
                       <a
-                        href="https://centauricoder01.github.io/"
+                        href="https://saddamhussain.vercel.app"
                         target="_blank"
                       >
                         <BsLink45Deg />
@@ -112,7 +112,7 @@ function Team() {
                   <ul className="social-media">
                     <li>
                       <a
-                        href="https://github.com/centauricoder01"
+                        href="https://github.com/AreebAhmad-02"
                         target="_blank"
                       >
                         <BsGithub />
@@ -120,7 +120,7 @@ function Team() {
                     </li>
                     <li>
                       <a
-                        href="https://www.linkedin.com/in/rajendra01/"
+                        href="https://www.linkedin.com/in/areeb-ahmad-13a83a219"
                         target="_blank"
                       >
                         <BsLinkedin />
@@ -128,8 +128,7 @@ function Team() {
                     </li>
                     <li>
                       <a
-                        href="https://centauricoder01.github.io/"
-                        target="_blank"
+                        href="#"
                       >
                         <BsLink45Deg />
                       </a>
@@ -148,12 +147,12 @@ function Team() {
                 <div className="team-info">
                   <div className="team-info-comntent">
                     <h4 className="title">Abdul Rafey</h4>
-                    <span className="text-secondary">MERN Developer</span>
+                    <span className="text-secondary">Backend Developer</span>
                   </div>
                   <ul className="social-media">
                     <li>
                       <a
-                        href="https://github.com/centauricoder01"
+                        href="https://github.com/abdurafeyf"
                         target="_blank"
                       >
                         <BsGithub />
@@ -161,7 +160,7 @@ function Team() {
                     </li>
                     <li>
                       <a
-                        href="https://www.linkedin.com/in/rajendra01/"
+                        href="https://linkedin.com/in/abdurafeyf"
                         target="_blank"
                       >
                         <BsLinkedin />
@@ -169,8 +168,8 @@ function Team() {
                     </li>
                     <li>
                       <a
-                        href="https://centauricoder01.github.io/"
-                        target="_blank"
+                        href="#"
+                        
                       >
                         <BsLink45Deg />
                       </a>
