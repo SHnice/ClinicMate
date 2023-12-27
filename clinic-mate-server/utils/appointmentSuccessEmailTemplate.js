@@ -55,7 +55,7 @@ export const appointmentSuccessEmailTemplate = (name, patientName, date, time) =
                                         
                                       <p style="color:#000; font-size:18px;line-height:24px; margin:10px 0 0 0; font-weight:bold; font-family:'Rubik',sans-serif; margin: 0 0 15px 0; letter-spacing: -0.01em; color: #121212;">
                                   
-                                      Email success registration
+                                      New Appointment Confirmed
                                           
                                       </p>
                                       <p style="color:#000; font-size:16px;line-height:18px; margin:10px 0 0 0; font-weight:medium; font-family:'Rubik',sans-serif; margin: 0 0 15px 0; letter-spacing: -0.01em; color: #121212;">
