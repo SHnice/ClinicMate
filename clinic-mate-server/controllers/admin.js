@@ -210,7 +210,7 @@ const generateStats = async (req, res) => {
         { subheading: "Verified Doctors", heading: nod },
         { subheading: "Registered Patients", heading: nop },
         { subheading: "Appointments Fulfilled", heading: totalapt },
-        { subheading: "Total Appointment Fees", heading: `₹ ${totalRevenue}` },
+        { subheading: "Total Appointment Fees", heading: `RS ${totalRevenue}` },
       ];
 
       return res.status(200).json(responseArray);

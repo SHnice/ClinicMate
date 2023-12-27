@@ -16,6 +16,7 @@ export default function SignUp() {
   const [speciality, setSpeciality] = useState("");
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
+  const [pmdc, setPmdc] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -28,6 +29,7 @@ export default function SignUp() {
       lname,
       department,
       speciality,
+      pmdcNumber: pmdc,
       email,
       password,
     };
@@ -98,6 +100,19 @@ export default function SignUp() {
             sx={{ marginBottom: "10px" }}
             value={department}
             onChange={(event) => setDepartment(event.target.value)}
+          />
+        )}
+
+         {user === "Doctor" && (
+          <TextField
+            name="pmdcNumber"
+            required
+            fullWidth
+            id="pmdcNumber"
+            label="PMDC Number"
+            sx={{ marginBottom: "10px" }}
+            value={pmdc}
+            onChange={(event) => setPmdc(event.target.value)}
           />
         )}
 

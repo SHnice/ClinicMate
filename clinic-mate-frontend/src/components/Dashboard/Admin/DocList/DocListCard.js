@@ -54,7 +54,7 @@ export default function DocListCard(props) {
             Edit
           </Button>
           <Button sx={{ pointerEvents: "none", color: "#000" }}>
-            {`₹ ${props.doctor.fee}/-`}
+            {`Rs ${props.doctor.fee}/-`}
           </Button>
         </CardActions>
       </CardContent>

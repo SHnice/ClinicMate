@@ -83,7 +83,7 @@ export default function DuePaymentCard(props) {
         >{`${props.appointment.date} (${props.appointment.time})`}</Typography>
         <br />
         <Typography variant="h6" component="div" color="blue">
-          {`₹ ${props.appointment.fee}/-`}
+          {`RS ${props.appointment.fee}/-`}
         </Typography>
         <br />
         <CardActions sx={{ justifyContent: "space-between" }} disableSpacing>

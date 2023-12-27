@@ -13,6 +13,7 @@ export default function AddNew() {
   const [userType, setUserType] = useState("");
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
+  const [pmdc, setPmdc] = useState("");
   const [workDays, setWorkDays] = useState([]);
   const [time, setTime] = useState("");
   const [department, setDepartment] = useState("");
@@ -36,6 +37,7 @@ export default function AddNew() {
           setWorkDays(res.data.workDays || []);
           setTime(res.data.time || "");
           setDepartment(res.data.department || "");
+          setPmdc(res.data.pmdcNumber || "");
           setSpeciality(res.data.speciality || "");
           setFee(res.data.fee || "");
         }
@@ -72,6 +74,7 @@ export default function AddNew() {
         time,
         department,
         speciality,
+        pmdcNumber: pmdc,
         fee,
       });
       if (res.data.error) {
@@ -192,6 +195,42 @@ export default function AddNew() {
             <>
               <div className={styles.rrow}>
                 <div className={styles.col25}>
+                  <label htmlFor="speciality">Speciality</label>
+                </div>
+                <div className={styles.col75}>
+                  <input
+                    className={styles.input}
+                    type="text"
+                    id="speciality"
+                    name="speciality"
+                    value={speciality}
+                    disabled={true}
+                    autoComplete="off"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className={styles.rrow}>
+                <div className={styles.col25}>
+                  <label htmlFor="pmdcNumber">PMDC Number</label>
+                </div>
+                <div className={styles.col75}>
+                  <input
+                    className={styles.input}
+                    type="text"
+                    id="pmdcNumber"
+                    name="pmdcNumber"
+                    value={pmdc}
+                    disabled
+                    autoComplete="off"
+                    required
+                  />
+                </div>
+              </div>
+              
+              <div className={styles.rrow}>
+                <div className={styles.col25}>
                   <label htmlFor="department">Department</label>
                 </div>
                 <div className={styles.col75}>
@@ -208,24 +247,8 @@ export default function AddNew() {
                   />
                 </div>
               </div>
-              <div className={styles.rrow}>
-                <div className={styles.col25}>
-                  <label htmlFor="speciality">Speciality</label>
-                </div>
-                <div className={styles.col75}>
-                  <input
-                    className={styles.input}
-                    type="text"
-                    id="speciality"
-                    name="speciality"
-                    value={speciality}
-                    onChange={(event) => setSpeciality(event.target.value)}
-                    placeholder="Speciality ..."
-                    autoComplete="off"
-                    required
-                  />
-                </div>
-              </div>
+
+
               <div className={styles.rrow}>
                 <div className={styles.col25}>
                   <label htmlFor="fee">Fee</label>

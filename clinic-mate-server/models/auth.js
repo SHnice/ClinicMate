@@ -23,6 +23,7 @@ const authSchema = new mongoose.Schema({
   workDays: [String],
   time: String,
   fee: Number,
+  pmdcNumber: String,
   email: {
     type: String,
     required: true,
