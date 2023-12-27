@@ -1,5 +1,16 @@
 import nodemailer from 'nodemailer';
 import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+// Assuming this code is in a module
+
+const currentFilePath = fileURLToPath(import.meta.url);
+const currentDirPath = dirname(currentFilePath);
+
+const handImagePath = path.join(currentDirPath, '../../public/images/hand.png');
+const logoImagePath = path.join(currentDirPath, '../../public/images/logo.png');
+
 
 export const sendEmail = async (subject, message, send_to, sent_from) => {
     console.log('email',process.env.EMAIL_HOST,process.env.EMAIL_USER,process.env.EMAIL_PASS)
@@ -20,12 +31,12 @@ export const sendEmail = async (subject, message, send_to, sent_from) => {
         attachments: [
               {
                 filename: 'hand.png', 
-                path: 'utils/hand.png',
+                path: handImagePath,
                 cid: 'hand'
               },
               {
                 filename: 'logo.png',
-                path: 'utils/logo.png',
+                path: handImagePath,
                 cid:"logo"
               }
           ]
