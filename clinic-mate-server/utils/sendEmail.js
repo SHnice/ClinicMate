@@ -28,18 +28,18 @@ export const sendEmail = async (subject, message, send_to, sent_from) => {
         to: send_to,
         subject: subject,
         html: message,
-        attachments: [
-              {
-                filename: 'hand.png', 
-                path: handImagePath,
-                cid: 'hand'
-              },
-              {
-                filename: 'logo.png',
-                path: logoImagePath,
-                cid:"logo"
-              }
-          ]
+        // attachments: [
+        //       {
+        //         filename: 'hand.png', 
+        //         path: handImagePath,
+        //         cid: 'hand'
+        //       },
+        //       {
+        //         filename: 'logo.png',
+        //         path: logoImagePath,
+        //         cid:"logo"
+        //       }
+        //   ]
     }
     try {
         await transporter.sendMail(options);
