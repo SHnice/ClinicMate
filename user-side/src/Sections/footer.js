@@ -99,13 +99,13 @@ function Footer() {
             <div className="row">
               <div className="col-12 text-center">
                 <p className="copyright-text">
-                  Copyright © 2023 Redesign & Redeveloped by
+                  Copyright © 2023 Design & Developed by
                   <a
                     href="https://github.com/piyush-agrawal6"
                     className="text-secondary"
                     target="_blank"
                   >
-                    Piyush Agrawal
+                    Clinic Mate Team
                   </a>
                 </p>
               </div>
