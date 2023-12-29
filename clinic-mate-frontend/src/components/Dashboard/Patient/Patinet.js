@@ -2,7 +2,6 @@ import React from "react";
 import Dashboard from "../Dashboard";
 
 const tabs = [
-  { title: "View Location", redirect: "/dashboard/patient/view-location" },
   {
     title: "Book Appointment",
     redirect: "/dashboard/patient/book-appointment",
